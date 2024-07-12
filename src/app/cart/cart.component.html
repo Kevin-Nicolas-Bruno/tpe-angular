@@ -1,0 +1,7 @@
+<p>Carrito de compras</p>
+<div>
+    @for (car of (cartList$ | async); track car.brand){
+        <p>Modelo:{{car.model}}</p>
+        <p>Cantidad: {{car.quantity}}</p>   
+    }
+</div>
